@@ -29,33 +29,44 @@ print "login success plak"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""O҉n҉e҉ ҉P҉i҉e҉c҉e҉ ҉T҉e҉a҉m҉ ҉P҉r҉o҉t҉e҉c҉t҉
-Owner : ✰ЌờᎮḼΛẌֆ✰
+helpMessage ="""𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓢𝓽𝓾𝓭𝓲𝓸
+作者 : Yuan👻
 -==================-
-◄]·♦·Menu For Public·♦·[►
+◄]·♦·群組內專用選單♦·[►
 [•]Adminlist
+   <查看管理>
 [•]Ownerlist
+   <查看作者>
 [•]Info Group
+   <查看群組資料>
 [•]Welcome
+   <設定歡迎訊息>
 [•]Creator
 [•]Bot
-◄]·♦·Menu For Admin·♦·[►
+◄]·♦·管理員專用選單·♦·[►
 -==================-
 [•]Cancel
+   <取消邀請>
 [•]「Buka/Tutup」qr
+   <開關網址>
 [•]Mid Bot
+   <查看MID>
 [•]Speed/Sp
+   <查看伺服器速度>
 [•]「Cctv/Ciduk」
 [•]Status/Set
+   <查看所有設定>
 [•]Gurl
 [•]Jam「On/Off」
 [•]Tag all/Tagall
+   <標註所有人>
 [•]Absen/Respon
 [•]Banlist
+   <查看黑單列表>
 >>[Perintah Proteksi]<<
-👑Hanya Untuk Owner👑
+👑製作者：幻想工作室👑
 -==================-
-O҉n҉e҉ ҉P҉i҉e҉c҉e҉ ҉T҉e҉a҉m҉ ҉P҉r҉o҉t҉e҉c҉t҉
+𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓢𝓽𝓾𝓭𝓲𝓸
 -==================-
 """
 KAC=[cl,ki,kk,kc,ks]
@@ -76,8 +87,8 @@ Cmid = kc.getProfile().mid #Ussop
 Dmid = ks.getProfile().mid #Chooper
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
-admin=["ued156c86ffa56024c0acba16f7889e6d"] 
-owner=["ued156c86ffa56024c0acba16f7889e6d"]
+admin=["ub6f9d53713c5869f0d78e71febe13837"] 
+owner=["ub6f9d53713c5869f0d78e71febe13837"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -104,19 +115,19 @@ Ready:
 
 
 Minat? Silahkan PM!
-Idline: http://line.me/ti/p/~hanavy1992""",
+Idline: http://line.me/ti/p/~abc8806191""",
     "lang":"JP",
-    "comment":"Thanks for add me",
+    "comment":"感謝您加入我好友",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"Ｏｎｅ Ｐｉｅｃｅ Ｔｅａｍ ",
-    "cName2":"Ｏｎｅ Ｐｉｅｃｅ Ｔｅａｍ ",
-    "cName3":"Ｏｎｅ Ｐｉｅｃｅ Ｔｅａｍ ",
-    "cName4":"Ｏｎｅ Ｐｉｅｃｅ Ｔｅａｍ ",
-    "cName5":"Ｏｎｅ Ｐｉｅｃｅ Ｔｅａｍ ",
+    "cName":"𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓢𝓽𝓾𝓭𝓲𝓸",
+    "cName2":"𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓢𝓽𝓾𝓭𝓲𝓸",
+    "cName3":"𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓢𝓽𝓾𝓭𝓲𝓸",
+    "cName4":"𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓢𝓽𝓾𝓭𝓲𝓸",
+    "cName5":"𝓕𝓪𝓷𝓽𝓪𝓼𝔂𝓢𝓽𝓾𝓭𝓲𝓸",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -393,12 +404,12 @@ def bot(op):
                     cl.sendText(msg.to,msg.text)
             elif msg.text is None:
                 return
-            elif msg.text in ["Key","help","Help"]:
+            elif msg.text in ["yuan:Key","help","Help"]:
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,helpMessage)
                 else:
                     cl.sendText(msg.to,helpt)
-            elif msg.text in ["Admin menu"]:
+            elif msg.text in ["yuan:Adminmenu"]:
               if msg.from_ in admin:
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to,Setgroup)
